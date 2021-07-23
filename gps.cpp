@@ -15,6 +15,8 @@ uint8_t GPS::init(HardwareSerial *serial, uint32_t baud)
     gpsBaud   = baud;           // keep a copy of the current baudrate
 
     gpsSerial->begin(gpsBaud);  // start connection
+
+    /*
     
     {
         char command[] = "$PMTK314,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*29\x0d\x0a";
@@ -23,6 +25,7 @@ uint8_t GPS::init(HardwareSerial *serial, uint32_t baud)
 
         delay( 100 );
     }
+    */
 
     // {
     //     char command[] = "$PMTK251,19200*22\x0d\x0a";
