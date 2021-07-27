@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <gps.h>
+
 GPS gps;
 const char outputFormat[] =
     R"""(
